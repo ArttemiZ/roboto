@@ -1,0 +1,43 @@
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+}
+.text-wrapper {
+display: flex;
+padding-top: 8px;
+
+}
+
+#text-wrapper1{
+    background: green;
+}
+
+#text-wrapper2{
+    background: red;
+}
+.text-wrapper h1{
+    white-space: nowrap;
+    font-family: rubik;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline;
+
+}
+#text-wrapper1 h1{
+    color: white;
+    animation: animafaixa 2s linear infinite;
+}
+#text-wrapper2 h1{
+    color: white;
+    animation: animafaixa 2s linear infinite reverse;
+}
+
+@keyframes animafaixa{
+    0% {
+        transform: translateX(0%);
+    } 100% {
+        transform: translate(-100%);
+    }
+}
