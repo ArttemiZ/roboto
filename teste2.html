@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="efeito">
+        <div class="corttex">CÓRTTEX</div>
+    </div>
+    <style>
+        @font-face {
+            font-family: bagerich;
+            src: url(fontes/bagerichdemo.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+        }
+        body{
+            overflow: hideen;
+        }
+        .efeito {
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .corttex {
+            font-family: bagerich;
+            font-size: 80px;
+            font-weight:300;
+            color: #fff;
+        }
+.cursor{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+    animation: cursor_animation 3s linear infinite;
+}
+
+@keyframes cursor_animation{
+    0% {
+        width: 350px;
+        height: 350px;
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    100% {
+        width: 350px;
+        height: 350px;
+    }
+}
+    </style>
+    <script>
+        let cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove',(e)=> {
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        })
+    </script>
+</body>
+</html>

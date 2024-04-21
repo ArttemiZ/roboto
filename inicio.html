@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div id="tempo">
+        <div class="cursor"></div>
+        <div class="efeito">
+            <div class="corttex">CÓRTTEX</div>
+        </div>
+    </div>
+
+    <section id="conteiner">
+        <div class="text-wrapper" id="text-wrapper1">
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Transforma &nbsp;&nbsp;&nbsp;</h1>
+        </div>
+        <div class="text-wrapper" id="text-wrapper2">
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;&nbsp;Técnologia&nbsp; Que&nbsp; Revoluciona &nbsp;&nbsp;&nbsp;</h1>
+    </section>
+    <script>
+        let cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove',(e)=> {
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        })
+    </script>
+</body>
+
+</html>
